@@ -1,0 +1,61 @@
+.private-access-page {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  color: #edf0f7;
+  background: radial-gradient(ellipse at 50% 0%, #252448 0%, #0b0d12 55%);
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+}
+.private-access-card {
+  width: min(100%, 420px);
+  padding: 34px;
+  background: #141821;
+  border: 1px solid #303747;
+  border-radius: 18px;
+  box-shadow: 0 24px 90px #0008;
+}
+.private-access-mark {
+  display: grid;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  margin-bottom: 24px;
+  border-radius: 15px;
+  background: linear-gradient(140deg, #9388ff, #5b50dc);
+  color: white;
+  font-size: 27px;
+  font-weight: 800;
+}
+.private-access-eyebrow {
+  color: #9289ff;
+  font: 10px "DM Mono", Consolas, monospace;
+  letter-spacing: 1.1px;
+}
+.private-access-card h1 { margin: 10px 0; font-size: 30px; letter-spacing: -0.8px; }
+.private-access-description { margin: 0 0 25px; color: #929db1; font-size: 13px; line-height: 1.7; }
+.private-access-form { display: flex; flex-direction: column; gap: 10px; }
+.private-access-form label { color: #d7dce7; font-size: 12px; font-weight: 700; }
+.private-access-form input {
+  width: 100%; padding: 13px 14px; color: #f3f4fb; background: #0c1017;
+  border: 1px solid #343c4c; border-radius: 8px; outline: none;
+}
+.private-access-form input:focus { border-color: #7775f8; box-shadow: 0 0 0 3px #7775f81c; }
+.private-access-submit {
+  min-height: 44px; margin-top: 7px; border: 1px solid #9693ff55; border-radius: 8px;
+  color: white; background: #7775f8; font-weight: 700;
+}
+.private-access-submit:hover:not(:disabled) { background: #8987ff; }
+.private-access-submit:disabled { opacity: .6; cursor: wait; }
+.private-access-footnote { margin: 12px 0 0; color: #6e798d; text-align: center; font-size: 10px; }
+.private-access-status { padding: 13px 0; color: #b8c0d0; font-size: 12px; }
+.private-access-error { color: #ffb9c0; font-size: 12px; line-height: 1.65; overflow-wrap: anywhere; }
+.private-access-secondary { display: block; margin-top: 14px; padding: 9px 12px; color: #e7e8ff; background: #23243a; border: 1px solid #414267; border-radius: 7px; }
+.private-logout {
+  position: fixed; z-index: 100; top: 12px; right: 14px; padding: 7px 11px;
+  color: #c3cada; background: #171c25eF; border: 1px solid #343b4b; border-radius: 7px;
+  font-size: 11px; box-shadow: 0 3px 15px #0003;
+}
+.private-logout:hover { color: white; background: #252a38; }
+.private-logout:disabled { opacity: .6; }
+@media (max-width: 480px) { .private-access-card { padding: 25px 21px; } }

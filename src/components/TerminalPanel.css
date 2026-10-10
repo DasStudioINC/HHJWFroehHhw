@@ -1,0 +1,140 @@
+.terminal-panel {
+  margin-top: 12px;
+  overflow: hidden;
+  border: 1px solid #303746;
+  border-radius: 10px;
+  background: #080b12;
+  color: #d7e0ed;
+  font-family: Consolas, "Courier New", monospace;
+  min-width: 0;
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 13px;
+  border-bottom: 1px solid #252b37;
+  background: #10141e;
+}
+
+.terminal-heading,
+.terminal-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.terminal-heading {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.terminal-status {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #778091;
+}
+
+.terminal-status.is-running {
+  background: #42d392;
+  box-shadow: 0 0 8px #42d39266;
+}
+
+.terminal-session {
+  color: #929caf;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.terminal-actions button,
+.terminal-input-row button {
+  border: 1px solid #343d4d;
+  border-radius: 6px;
+  padding: 6px 10px;
+  background: #1a2030;
+  color: #e3e9f3;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.terminal-actions button:hover,
+.terminal-input-row button:hover:not(:disabled) {
+  background: #252e40;
+}
+
+.terminal-actions .terminal-stop {
+  color: #ff9292;
+  border-color: #743a43;
+}
+
+.terminal-actions .terminal-close {
+  padding: 2px 8px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.terminal-output {
+  box-sizing: border-box;
+  min-height: 100px;
+  max-height: 340px;
+  overflow: auto;
+  margin: 0;
+  padding: 14px;
+  color: #d0d8e6;
+  background: #080b12;
+  font:
+    12px/1.65 Consolas,
+    "Courier New",
+    monospace;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.terminal-error {
+  padding: 9px 13px;
+  color: #ffaaaa;
+  background: #32171d;
+  border-top: 1px solid #743a43;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.terminal-input-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-top: 1px solid #252b37;
+}
+
+.terminal-prompt {
+  color: #55d69e;
+  font-weight: bold;
+}
+
+.terminal-input-row input {
+  flex: 1;
+  width: 0;
+  min-width: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: #e4eaf4;
+  font:
+    12px Consolas,
+    "Courier New",
+    monospace;
+}
+
+.terminal-input-row input::placeholder {
+  color: #737f92;
+}
+
+.terminal-input-row button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
